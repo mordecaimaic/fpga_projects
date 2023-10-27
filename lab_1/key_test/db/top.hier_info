@@ -1,0 +1,16 @@
+|key_test
+clk => led_r[0].CLK
+clk => led_r[1].CLK
+clk => led_r[2].CLK
+clk => led_r[3].CLK
+clk => enable.CLK
+key[0] => ~NO_FANOUT~
+key[1] => enable.OUTPUTSELECT
+key[2] => ~NO_FANOUT~
+key[3] => ~NO_FANOUT~
+led[0] <= led_r[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led_r[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led_r[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led_r[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

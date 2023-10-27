@@ -1,0 +1,6 @@
+
+State Machine - |key_test|state
+Name state.IDLE state.RELEASED state.PRESSED 
+state.IDLE 0 0 0 
+state.PRESSED 1 0 1 
+state.RELEASED 1 1 0 

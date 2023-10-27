@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at seg_scan.v(97): always construct contains both blocking and non-blocking assignments File: D:/scnu/fpga_project/lab_2/05_seg_test/src/seg_scan.v Line: 97
