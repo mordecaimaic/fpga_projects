@@ -1,5 +1,5 @@
 Analysis & Synthesis report for seg_test
-Fri Oct 27 17:04:34 2023
+Fri Oct 27 18:32:30 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -59,13 +59,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 27 17:04:34 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 27 18:32:30 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; seg_test                                    ;
 ; Top-level Entity Name              ; seg_test                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 535                                         ;
-;     Total combinational functions  ; 529                                         ;
+; Total logic elements               ; 528                                         ;
+;     Total combinational functions  ; 522                                         ;
 ;     Dedicated logic registers      ; 264                                         ;
 ; Total registers                    ; 264                                         ;
 ; Total pins                         ; 22                                          ;
@@ -198,16 +198,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 535       ;
+; Estimated Total logic elements              ; 528       ;
 ;                                             ;           ;
-; Total combinational functions               ; 529       ;
+; Total combinational functions               ; 522       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 192       ;
-;     -- 3 input functions                    ; 137       ;
-;     -- <=2 input functions                  ; 200       ;
+;     -- 4 input functions                    ; 185       ;
+;     -- 3 input functions                    ; 136       ;
+;     -- <=2 input functions                  ; 201       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 374       ;
+;     -- normal mode                          ; 367       ;
 ;     -- arithmetic mode                      ; 155       ;
 ;                                             ;           ;
 ; Total registers                             ; 264       ;
@@ -220,8 +220,8 @@ refer to the applicable agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 264       ;
-; Total fan-out                               ; 2445      ;
-; Average fan-out                             ; 2.92      ;
+; Total fan-out                               ; 2416      ;
+; Average fan-out                             ; 2.91      ;
 +---------------------------------------------+-----------+
 
 
@@ -230,7 +230,7 @@ refer to the applicable agreement for further details.
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name ; Library Name ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
-; |seg_test                       ; 529 (125)           ; 264 (70)                  ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |seg_test                            ; seg_test    ; work         ;
+; |seg_test                       ; 522 (126)           ; 264 (70)                  ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |seg_test                            ; seg_test    ; work         ;
 ;    |ax_debounce:ax_debounce_m0| ; 77 (77)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|ax_debounce:ax_debounce_m0 ; ax_debounce ; work         ;
 ;    |ax_debounce:ax_debounce_m1| ; 77 (77)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|ax_debounce:ax_debounce_m1 ; ax_debounce ; work         ;
 ;    |count_m10:count10_m0|       ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|count_m10:count10_m0       ; count_m10   ; work         ;
@@ -245,7 +245,7 @@ refer to the applicable agreement for further details.
 ;    |seg_decoder:seg_decoder_m3| ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|seg_decoder:seg_decoder_m3 ; seg_decoder ; work         ;
 ;    |seg_decoder:seg_decoder_m4| ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|seg_decoder:seg_decoder_m4 ; seg_decoder ; work         ;
 ;    |seg_decoder:seg_decoder_m5| ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|seg_decoder:seg_decoder_m5 ; seg_decoder ; work         ;
-;    |seg_scan:seg_scan_m0|       ; 132 (132)           ; 91 (91)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|seg_scan:seg_scan_m0       ; seg_scan    ; work         ;
+;    |seg_scan:seg_scan_m0|       ; 124 (124)           ; 91 (91)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |seg_test|seg_scan:seg_scan_m0       ; seg_scan    ; work         ;
 +---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -291,12 +291,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg_decoder:seg_decoder_m4|seg_data[6]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m4|seg_data[1]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m5|seg_data[0]              ; enable              ; yes                    ;
+; seg_decoder:seg_decoder_m5|seg_data[1]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m5|seg_data[2]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m5|seg_data[3]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m5|seg_data[4]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m5|seg_data[5]              ; enable              ; yes                    ;
 ; seg_decoder:seg_decoder_m5|seg_data[6]              ; enable              ; yes                    ;
-; seg_decoder:seg_decoder_m5|seg_data[1]              ; enable              ; yes                    ;
 ; Number of user-specified and inferred latches = 42  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -307,13 +307,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
+; seg_scan:seg_scan_m0|input_data[5][7] ; Stuck at VCC due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|flag             ; Stuck at GND due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|input_data[0][7] ; Stuck at VCC due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|input_data[1][7] ; Stuck at VCC due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|input_data[2][7] ; Stuck at VCC due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|input_data[3][7] ; Stuck at VCC due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|input_data[4][7] ; Stuck at VCC due to stuck port data_in ;
-; seg_scan:seg_scan_m0|input_data[5][7] ; Stuck at VCC due to stuck port data_in ;
 ; seg_scan:seg_scan_m0|seg_data[7]      ; Stuck at VCC due to stuck port data_in ;
 ; Total Number of Removed Registers = 8 ;                                        ;
 +---------------------------------------+----------------------------------------+
@@ -324,7 +324,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------+---------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal        ; Registers Removed due to This Register ;
 +---------------------------------------+---------------------------+----------------------------------------+
-; seg_scan:seg_scan_m0|input_data[0][7] ; Stuck at VCC              ; seg_scan:seg_scan_m0|seg_data[7]       ;
+; seg_scan:seg_scan_m0|input_data[5][7] ; Stuck at VCC              ; seg_scan:seg_scan_m0|seg_data[7]       ;
 ;                                       ; due to stuck port data_in ;                                        ;
 +---------------------------------------+---------------------------+----------------------------------------+
 
@@ -377,7 +377,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 ; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; Yes        ; |seg_test|led[3]~reg0                      ;
-; 16:1               ; 7 bits    ; 70 LEs        ; 35 LEs               ; 35 LEs                 ; Yes        ; |seg_test|seg_scan:seg_scan_m0|seg_data[4] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 35 LEs               ; 35 LEs                 ; Yes        ; |seg_test|seg_scan:seg_scan_m0|seg_data[1] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 
 
@@ -517,16 +517,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR SCLR          ; 64                          ;
 ;     ENA CLR           ; 25                          ;
 ;     plain             ; 42                          ;
-; cycloneiii_lcell_comb ; 543                         ;
+; cycloneiii_lcell_comb ; 536                         ;
 ;     arith             ; 155                         ;
 ;         2 data inputs ; 154                         ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 388                         ;
+;     normal            ; 381                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 25                          ;
-;         2 data inputs ; 34                          ;
-;         3 data inputs ; 136                         ;
-;         4 data inputs ; 192                         ;
+;         2 data inputs ; 35                          ;
+;         3 data inputs ; 135                         ;
+;         4 data inputs ; 185                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
 ; Average LUT depth     ; 3.34                        ;
@@ -548,7 +548,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Oct 27 17:04:22 2023
+    Info: Processing started: Fri Oct 27 18:32:18 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off seg_test -c seg_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -587,13 +587,13 @@ Critical Warning (18061): Ignored Power-Up Level option on the following registe
     Critical Warning (18010): Register enable will power up to High File: D:/scnu/fpga_project/lab_2/05_seg_test/src/seg_test.v Line: 15
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 564 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 563 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 542 logic cells
+    Info (21061): Implemented 541 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4762 megabytes
-    Info: Processing ended: Fri Oct 27 17:04:34 2023
+    Info: Peak virtual memory: 4763 megabytes
+    Info: Processing ended: Fri Oct 27 18:32:30 2023
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:24
 

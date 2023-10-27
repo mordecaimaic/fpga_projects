@@ -102,7 +102,7 @@ always @(posedge clk) begin
    input_data[4] = seg_data_4;
    input_data[5] = seg_data_5;
 
-     for (i = 0; i < 6; i = i + 1) begin
+     for (i = 0; i < 5; i = i + 1) begin
       if (input_data[i] == 8'b1100_0000 && flag == 0)
          input_data[i] = 8'b1111_1111;
 	  else if  (input_data[i] != 8'b1100_0000)
