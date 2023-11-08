@@ -1,5 +1,5 @@
 Flow report for buzzer_pwm_test
-Wed Nov 08 16:12:48 2023
+Wed Nov 08 19:21:53 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 08 16:12:45 2023       ;
+; Flow Status                        ; Successful - Wed Nov 08 19:21:50 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; buzzer_pwm_test                             ;
 ; Top-level Entity Name              ; buzzer_pwm_test                             ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6F17C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 154 / 6,272 ( 2 % )                         ;
-;     Total combinational functions  ; 146 / 6,272 ( 2 % )                         ;
-;     Dedicated logic registers      ; 124 / 6,272 ( 2 % )                         ;
-; Total registers                    ; 124                                         ;
-; Total pins                         ; 4 / 180 ( 2 % )                             ;
+; Total logic elements               ; 1,075 / 6,272 ( 17 % )                      ;
+;     Total combinational functions  ; 1,065 / 6,272 ( 17 % )                      ;
+;     Dedicated logic registers      ; 186 / 6,272 ( 3 % )                         ;
+; Total registers                    ; 186                                         ;
+; Total pins                         ; 7 / 180 ( 4 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2023 16:12:23 ;
+; Start date & time ; 11/08/2023 19:21:21 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; buzzer_pwm_test     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 268490108405490.169943114309456        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 268490108405490.169944248118208        ; --            ; --          ; --         ;
 ; ENABLE_SIGNALTAP                    ; Off                                    ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
@@ -96,11 +96,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:13     ; 1.0                     ; 4759 MB             ; 00:00:26                           ;
-; Fitter                    ; 00:00:06     ; 1.0                     ; 5494 MB             ; 00:00:06                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4663 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4745 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 4770 MB             ; 00:00:28                           ;
+; Fitter                    ; 00:00:10     ; 1.1                     ; 5502 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.1                     ; 4757 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:46                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

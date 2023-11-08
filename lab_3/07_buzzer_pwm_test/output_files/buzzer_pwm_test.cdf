@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE6F17) Path("D:/scnu/fpga_project/lab_3/07_buzzer_pwm_test/output_files/") File("buzzer_pwm_test.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE6F17) Path("C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/output_files/") File("buzzer_pwm_test.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

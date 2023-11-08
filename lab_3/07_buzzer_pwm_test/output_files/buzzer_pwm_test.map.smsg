@@ -1,1 +1,1 @@
-Info (10281): Verilog HDL Declaration information at buzzer_pwm_test.v(6): object "Led" differs only in case from object "led" in the same scope File: D:/scnu/fpga_project/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 6
+Warning (10268): Verilog HDL information at buzzer_pwm_test.v(32): always construct contains both blocking and non-blocking assignments File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 32

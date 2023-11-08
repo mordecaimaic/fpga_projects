@@ -1,5 +1,5 @@
 Analysis & Synthesis report for buzzer_pwm_test
-Wed Nov 08 16:12:36 2023
+Wed Nov 08 19:21:36 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -14,14 +14,18 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: ax_pwm:ax_pwm_m0
- 11. Parameter Settings for User Entity Instance: ax_debounce:ax_debounce_m0
- 12. Port Connectivity Checks: "ax_debounce:ax_debounce_m0"
- 13. Port Connectivity Checks: "ax_pwm:ax_pwm_m0"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Parameter Settings for User Entity Instance: ax_pwm:ax_pwm_m0
+ 13. Parameter Settings for User Entity Instance: ax_debounce:ax_debounce_m0
+ 14. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 15. Port Connectivity Checks: "ax_debounce:ax_debounce_m0"
+ 16. Port Connectivity Checks: "ax_pwm:ax_pwm_m0"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+ 20. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,16 +51,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 08 16:12:36 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 08 19:21:36 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; buzzer_pwm_test                             ;
 ; Top-level Entity Name              ; buzzer_pwm_test                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 177                                         ;
-;     Total combinational functions  ; 145                                         ;
-;     Dedicated logic registers      ; 124                                         ;
-; Total registers                    ; 124                                         ;
-; Total pins                         ; 4                                           ;
+; Total logic elements               ; 1,100                                       ;
+;     Total combinational functions  ; 1,064                                       ;
+;     Dedicated logic registers      ; 186                                         ;
+; Total registers                    ; 186                                         ;
+; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -163,19 +167,30 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                     ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
-; src/buzzer_pwm_test.v            ; yes             ; User Verilog HDL File  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v ;         ;
-; src/ax_pwm.v                     ; yes             ; User Verilog HDL File  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_pwm.v          ;         ;
-; src/ax_debounce.v                ; yes             ; User Verilog HDL File  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_debounce.v     ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                          ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
+; src/buzzer_pwm_test.v            ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v      ;         ;
+; src/ax_pwm.v                     ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_pwm.v               ;         ;
+; src/ax_debounce.v                ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_debounce.v          ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_divide.tdf                                 ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/abs_divider.inc                                ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sign_div_unsign.inc                            ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                 ;         ;
+; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/lpm_divide_ikm.tdf      ;         ;
+; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/sign_div_unsign_bnh.tdf ;         ;
+; db/alt_u_div_aaf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/alt_u_div_aaf.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/add_sub_8pc.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -183,41 +198,46 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 177       ;
+; Estimated Total logic elements              ; 1,100     ;
 ;                                             ;           ;
-; Total combinational functions               ; 145       ;
+; Total combinational functions               ; 1064      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 10        ;
-;     -- 3 input functions                    ; 65        ;
-;     -- <=2 input functions                  ; 70        ;
+;     -- 4 input functions                    ; 315       ;
+;     -- 3 input functions                    ; 568       ;
+;     -- <=2 input functions                  ; 181       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 30        ;
-;     -- arithmetic mode                      ; 115       ;
+;     -- normal mode                          ; 592       ;
+;     -- arithmetic mode                      ; 472       ;
 ;                                             ;           ;
-; Total registers                             ; 124       ;
-;     -- Dedicated logic registers            ; 124       ;
+; Total registers                             ; 186       ;
+;     -- Dedicated logic registers            ; 186       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 4         ;
+; I/O pins                                    ; 7         ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 124       ;
-; Total fan-out                               ; 748       ;
-; Average fan-out                             ; 2.70      ;
+; Maximum fan-out                             ; 186       ;
+; Total fan-out                               ; 3826      ;
+; Average fan-out                             ; 3.03      ;
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name               ; Entity Name     ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-----------------+--------------+
-; |buzzer_pwm_test           ; 145 (86)            ; 124 (63)                  ; 0           ; 0            ; 0       ; 0         ; 4    ; 0            ; |buzzer_pwm_test                  ; buzzer_pwm_test ; work         ;
-;    |ax_pwm:ax_pwm_m0|      ; 59 (59)             ; 61 (61)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|ax_pwm:ax_pwm_m0 ; ax_pwm          ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------+-----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                       ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                              ; Entity Name         ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |buzzer_pwm_test                       ; 1064 (275)          ; 186 (87)                  ; 0           ; 0            ; 0       ; 0         ; 7    ; 0            ; |buzzer_pwm_test                                                                                                 ; buzzer_pwm_test     ; work         ;
+;    |ax_debounce:ax_debounce_m0|        ; 77 (77)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|ax_debounce:ax_debounce_m0                                                                      ; ax_debounce         ; work         ;
+;    |ax_pwm:ax_pwm_m0|                  ; 59 (59)             ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|ax_pwm:ax_pwm_m0                                                                                ; ax_pwm              ; work         ;
+;    |lpm_divide:Div0|                   ; 653 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;       |lpm_divide_ikm:auto_generated|  ; 653 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|lpm_divide:Div0|lpm_divide_ikm:auto_generated                                                   ; lpm_divide_ikm      ; work         ;
+;          |sign_div_unsign_bnh:divider| ; 653 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider                       ; sign_div_unsign_bnh ; work         ;
+;             |alt_u_div_aaf:divider|    ; 653 (653)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |buzzer_pwm_test|lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider ; alt_u_div_aaf       ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -227,13 +247,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                               ; Reason for Removal                         ;
 +---------------------------------------------+--------------------------------------------+
 ; ax_pwm:ax_pwm_m0|period_r[0..3,7,11,13..31] ; Stuck at GND due to stuck port data_in     ;
-; ax_pwm:ax_pwm_m0|duty_r[0]                  ; Stuck at GND due to stuck port data_in     ;
 ; ax_pwm:ax_pwm_m0|period_cnt[0..2]           ; Merged with ax_pwm:ax_pwm_m0|period_cnt[3] ;
 ; ax_pwm:ax_pwm_m0|period_r[4..6,8,9,12]      ; Merged with ax_pwm:ax_pwm_m0|period_r[10]  ;
+; Led_period[0]                               ; Stuck at GND due to stuck port data_in     ;
 ; ax_pwm:ax_pwm_m0|period_cnt[3]              ; Stuck at GND due to stuck port data_in     ;
-; cnt[0]                                      ; Merged with duty[1]                        ;
-; Total Number of Removed Registers = 37      ;                                            ;
+; Led_period[1..7,30..32]                     ; Stuck at GND due to stuck port data_in     ;
+; Total Number of Removed Registers = 46      ;                                            ;
 +---------------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                        ;
++---------------+---------------------------+----------------------------------------+
+; Register name ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------+---------------------------+----------------------------------------+
+; Led_period[0] ; Stuck at GND              ; Led_period[32]                         ;
+;               ; due to stuck port data_in ;                                        ;
++---------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -241,14 +271,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 124   ;
+; Total registers                              ; 186   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 124   ;
+; Number of registers using Asynchronous Clear ; 164   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 22    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++----------------------------------------------------+
+; Inverted Register Statistics                       ;
++------------------------------------------+---------+
+; Inverted Register                        ; Fan out ;
++------------------------------------------+---------+
+; Led_period[8]                            ; 9       ;
+; Led_period[24]                           ; 8       ;
+; Led_period[22]                           ; 6       ;
+; Led_period[23]                           ; 6       ;
+; Led_period[26]                           ; 6       ;
+; Led_period[16]                           ; 6       ;
+; Led_period[15]                           ; 7       ;
+; Led_period[21]                           ; 5       ;
+; Led_period[20]                           ; 5       ;
+; Led_period[18]                           ; 6       ;
+; Led_period[14]                           ; 6       ;
+; Led_period[13]                           ; 6       ;
+; ax_debounce:ax_debounce_m0|button_out    ; 3       ;
+; ax_debounce:ax_debounce_m0|button_out_d0 ; 1       ;
+; Total number of inverted registers = 14  ;         ;
++------------------------------------------+---------+
 
 
 +---------------------------------------------------------------+
@@ -273,15 +326,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ax_debounce:ax_debounce_m0"                                                                   ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; button_posedge ; Output ; Info     ; Explicitly unconnected                                                              ;
-; button_negedge ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; button_out     ; Output ; Info     ; Explicitly unconnected                                                              ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 33             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_ikm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "ax_debounce:ax_debounce_m0"      ;
++----------------+--------+----------+------------------------+
+; Port           ; Type   ; Severity ; Details                ;
++----------------+--------+----------+------------------------+
+; button_posedge ; Output ; Info     ; Explicitly unconnected ;
+; button_out     ; Output ; Info     ; Explicitly unconnected ;
++----------------+--------+----------+------------------------+
 
 
 +--------------------------------------------------+
@@ -296,7 +371,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; period[12]     ; Input ; Info     ; Stuck at VCC ;
 ; period[11]     ; Input ; Info     ; Stuck at GND ;
 ; period[7]      ; Input ; Info     ; Stuck at GND ;
-; duty[0]        ; Input ; Info     ; Stuck at GND ;
 +----------------+-------+----------+--------------+
 
 
@@ -305,21 +379,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 4                           ;
-; cycloneiii_ff         ; 124                         ;
-;     CLR               ; 124                         ;
-; cycloneiii_lcell_comb ; 145                         ;
-;     arith             ; 115                         ;
-;         2 data inputs ; 51                          ;
-;         3 data inputs ; 64                          ;
-;     normal            ; 30                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 16                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 10                          ;
+; boundary_port         ; 7                           ;
+; cycloneiii_ff         ; 186                         ;
+;     CLR               ; 164                         ;
+;     ENA               ; 22                          ;
+; cycloneiii_lcell_comb ; 1064                        ;
+;     arith             ; 472                         ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 53                          ;
+;         3 data inputs ; 418                         ;
+;     normal            ; 592                         ;
+;         0 data inputs ; 25                          ;
+;         1 data inputs ; 17                          ;
+;         2 data inputs ; 85                          ;
+;         3 data inputs ; 150                         ;
+;         4 data inputs ; 315                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.80                        ;
-; Average LUT depth     ; 3.56                        ;
+; Max LUT depth         ; 91.00                       ;
+; Average LUT depth     ; 60.36                       ;
 +-----------------------+-----------------------------+
 
 
@@ -328,7 +405,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -338,7 +415,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 08 16:12:23 2023
+    Info: Processing started: Wed Nov 08 19:21:21 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off buzzer_pwm_test -c buzzer_pwm_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -348,26 +425,52 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/ax_
     Info (12023): Found entity 1: ax_pwm File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_pwm.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file src/ax_debounce.v
     Info (12023): Found entity 1: ax_debounce File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_debounce.v Line: 31
-Warning (10236): Verilog HDL Implicit Net warning at buzzer_pwm_test.v(56): created implicit net for "button_negedge" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 56
 Info (12127): Elaborating entity "buzzer_pwm_test" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at buzzer_pwm_test.v(9): object "Led_period" assigned a value but never read File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 9
-Warning (10240): Verilog HDL Always Construct warning at buzzer_pwm_test.v(28): inferring latch(es) for variable "duty", which holds its previous value in one or more paths through the always construct File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 28
-Info (10041): Inferred latch for "duty[0]" at buzzer_pwm_test.v(28) File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 28
-Info (12128): Elaborating entity "ax_pwm" for hierarchy "ax_pwm:ax_pwm_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 26
-Info (12128): Elaborating entity "ax_debounce" for hierarchy "ax_debounce:ax_debounce_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 58
+Warning (10230): Verilog HDL assignment warning at buzzer_pwm_test.v(55): truncated value with size 33 to match size of target (32) File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 55
+Info (12128): Elaborating entity "ax_pwm" for hierarchy "ax_pwm:ax_pwm_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 30
+Info (12128): Elaborating entity "ax_debounce" for hierarchy "ax_debounce:ax_debounce_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 68
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 54
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 54
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 54
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "33"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
+    Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/lpm_divide_ikm.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/sign_div_unsign_bnh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_aaf.tdf
+    Info (12023): Found entity 1: alt_u_div_aaf File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/alt_u_div_aaf.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/add_sub_7pc.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/add_sub_8pc.tdf Line: 22
+Info (13000): Registers with preset signals will power-up high File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/ax_debounce.v Line: 39
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_10_result_int[8]~6" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/alt_u_div_aaf.tdf Line: 36
+    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_11_result_int[8]~8" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/alt_u_div_aaf.tdf Line: 41
+    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_12_result_int[8]~10" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/db/alt_u_div_aaf.tdf Line: 46
+Info (144001): Generated suppressed messages file C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/output_files/buzzer_pwm_test.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "key1" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/src/buzzer_pwm_test.v Line: 4
-Info (21057): Implemented 181 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1120 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 177 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Wed Nov 08 16:12:36 2023
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 1113 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Wed Nov 08 19:21:36 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:29
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/07_buzzer_pwm_test/output_files/buzzer_pwm_test.map.smsg.
 
 

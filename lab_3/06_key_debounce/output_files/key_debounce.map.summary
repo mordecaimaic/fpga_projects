@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 08 19:09:56 2023
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : key_debounce
+Top-level Entity Name : key_debounce
+Family : Cyclone IV E
+Total logic elements : 1,173
+    Total combinational functions : 1,137
+    Dedicated logic registers : 239
+Total registers : 239
+Total pins : 21
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

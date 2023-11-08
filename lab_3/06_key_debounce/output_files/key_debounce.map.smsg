@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at key_debounce.v(124): always construct contains both blocking and non-blocking assignments File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 124
