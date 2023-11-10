@@ -126,6 +126,7 @@ seg_scan seg_scan_m0(
             cnt <= 0;
             duty <= 0;
             dir <= 1'b0;
+				Led_period <= 32'd100_000_000;
         end else begin
 			if(button_negedge)
 				begin

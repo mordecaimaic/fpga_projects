@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for key_debounce
-Fri Nov 10 10:31:39 2023
+Fri Nov 10 17:34:02 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -98,13 +98,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.31        ;
+; Average used               ; 1.30        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  26.6%      ;
-;     Processor 3            ;   2.1%      ;
+;     Processor 2            ;  25.7%      ;
+;     Processor 3            ;   2.0%      ;
 ;     Processor 4            ;   1.9%      ;
 +----------------------------+-------------+
 
@@ -123,7 +123,7 @@ refer to the applicable agreement for further details.
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 10.03 MHz ; 10.03 MHz       ; clk        ;      ;
+; 10.07 MHz ; 10.07 MHz       ; clk        ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -139,7 +139,7 @@ HTML report is unavailable in plain text report export.
 +-------+---------+-------------------+
 ; Clock ; Slack   ; End Point TNS     ;
 +-------+---------+-------------------+
-; clk   ; -98.712 ; -4090.682         ;
+; clk   ; -98.316 ; -4067.154         ;
 +-------+---------+-------------------+
 
 
@@ -178,106 +178,106 @@ No paths to report.
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node                                 ; To Node  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
-; -98.712 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 100.097    ;
-; -98.620 ; Led_period[20]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.383      ; 100.004    ;
-; -98.566 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.951     ;
-; -98.536 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.921     ;
-; -98.474 ; Led_period[20]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.858     ;
-; -98.444 ; Led_period[20]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.828     ;
-; -98.440 ; Led_period[21]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.821     ;
-; -98.420 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[27] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.805     ;
-; -98.390 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[28] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.775     ;
-; -98.362 ; Led_period[28]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.742     ;
-; -98.347 ; Led_period[15]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.727     ;
-; -98.328 ; Led_period[20]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.712     ;
-; -98.308 ; Led_period[10]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.693     ;
-; -98.298 ; Led_period[20]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.682     ;
-; -98.294 ; Led_period[21]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.675     ;
-; -98.274 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[25] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.659     ;
-; -98.264 ; Led_period[21]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.645     ;
-; -98.244 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[26] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.629     ;
-; -98.216 ; Led_period[28]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.596     ;
-; -98.201 ; Led_period[15]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.581     ;
-; -98.186 ; Led_period[28]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.566     ;
-; -98.182 ; Led_period[20]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.566     ;
-; -98.177 ; Led_period[24]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.557     ;
-; -98.171 ; Led_period[15]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.551     ;
-; -98.165 ; Led_period[11]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.550     ;
-; -98.162 ; Led_period[10]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.547     ;
-; -98.152 ; Led_period[20]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.536     ;
-; -98.148 ; Led_period[21]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.529     ;
-; -98.145 ; Led_period[22]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.526     ;
-; -98.132 ; Led_period[10]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.517     ;
-; -98.128 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[23] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.513     ;
-; -98.118 ; Led_period[21]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.499     ;
-; -98.098 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[24] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.483     ;
-; -98.081 ; Led_period[26]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.462     ;
-; -98.073 ; Led_period[19]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.459     ;
-; -98.070 ; Led_period[28]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.450     ;
-; -98.060 ; Led_period[29]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.440     ;
-; -98.055 ; Led_period[15]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.435     ;
-; -98.040 ; Led_period[28]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.420     ;
-; -98.036 ; Led_period[20]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.420     ;
-; -98.031 ; Led_period[24]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.411     ;
-; -98.025 ; Led_period[15]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.405     ;
-; -98.019 ; Led_period[11]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.404     ;
-; -98.018 ; Led_period[9]                             ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.399     ;
-; -98.016 ; Led_period[10]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.401     ;
-; -98.006 ; Led_period[20]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.390     ;
-; -98.002 ; Led_period[21]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.383     ;
-; -98.001 ; Led_period[24]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.381     ;
-; -97.999 ; Led_period[22]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.380     ;
-; -97.994 ; Led_period[25]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.375     ;
-; -97.989 ; Led_period[11]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.374     ;
-; -97.986 ; Led_period[10]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.371     ;
-; -97.983 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[21] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.367     ;
-; -97.972 ; Led_period[21]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.353     ;
-; -97.969 ; Led_period[22]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.350     ;
-; -97.953 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[22] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.337     ;
-; -97.935 ; Led_period[26]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.316     ;
-; -97.927 ; Led_period[19]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.313     ;
-; -97.924 ; Led_period[28]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.304     ;
-; -97.914 ; Led_period[29]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.294     ;
-; -97.911 ; Led_period[16]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.297     ;
-; -97.909 ; Led_period[15]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.289     ;
-; -97.905 ; Led_period[26]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.286     ;
-; -97.898 ; Led_period[18]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.284     ;
-; -97.897 ; Led_period[19]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.283     ;
-; -97.894 ; Led_period[28]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.274     ;
-; -97.891 ; Led_period[20]                            ; duty[21] ; clk          ; clk         ; 1.000        ; 0.382      ; 99.274     ;
-; -97.885 ; Led_period[24]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.265     ;
-; -97.884 ; Led_period[29]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.264     ;
-; -97.879 ; Led_period[15]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.259     ;
-; -97.873 ; Led_period[11]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.258     ;
-; -97.872 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[13] ; clk          ; clk         ; 1.000        ; -0.090     ; 98.783     ;
-; -97.872 ; Led_period[9]                             ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.253     ;
-; -97.870 ; Led_period[10]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.255     ;
-; -97.861 ; Led_period[20]                            ; duty[22] ; clk          ; clk         ; 1.000        ; 0.382      ; 99.244     ;
-; -97.856 ; Led_period[21]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.237     ;
-; -97.855 ; Led_period[24]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.235     ;
-; -97.853 ; Led_period[22]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.234     ;
-; -97.848 ; Led_period[25]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.229     ;
-; -97.847 ; Led_period[27]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.227     ;
-; -97.843 ; Led_period[11]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.228     ;
-; -97.842 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[14] ; clk          ; clk         ; 1.000        ; -0.090     ; 98.753     ;
-; -97.842 ; Led_period[9]                             ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.223     ;
-; -97.840 ; Led_period[10]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.225     ;
-; -97.837 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[19] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.221     ;
-; -97.826 ; Led_period[21]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.207     ;
-; -97.823 ; Led_period[22]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.204     ;
-; -97.819 ; Led_period[23]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.200     ;
-; -97.818 ; Led_period[25]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.199     ;
-; -97.807 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[20] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.191     ;
-; -97.789 ; Led_period[26]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.170     ;
-; -97.781 ; Led_period[19]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.167     ;
-; -97.780 ; Led_period[20]                            ; duty[13] ; clk          ; clk         ; 1.000        ; -0.091     ; 98.690     ;
-; -97.778 ; Led_period[28]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.158     ;
-; -97.768 ; Led_period[29]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.148     ;
-; -97.765 ; Led_period[16]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.151     ;
-; -97.763 ; Led_period[15]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.143     ;
-; -97.761 ; Led_period[17]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.147     ;
-; -97.759 ; Led_period[26]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.140     ;
-; -97.752 ; Led_period[18]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.138     ;
+; -98.316 ; Led_period[22]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.697     ;
+; -98.305 ; Led_period[28]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.685     ;
+; -98.170 ; Led_period[22]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.551     ;
+; -98.159 ; Led_period[28]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.539     ;
+; -98.140 ; Led_period[22]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.521     ;
+; -98.133 ; Led_period[20]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.517     ;
+; -98.129 ; Led_period[28]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.509     ;
+; -98.128 ; Led_period[21]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.509     ;
+; -98.083 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.468     ;
+; -98.066 ; Led_period[26]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.447     ;
+; -98.024 ; Led_period[22]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.405     ;
+; -98.022 ; Led_period[15]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.402     ;
+; -98.013 ; Led_period[28]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.393     ;
+; -97.994 ; Led_period[22]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.375     ;
+; -97.987 ; Led_period[20]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.371     ;
+; -97.986 ; Led_period[25]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.367     ;
+; -97.983 ; Led_period[28]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.363     ;
+; -97.982 ; Led_period[21]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.363     ;
+; -97.957 ; Led_period[20]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.341     ;
+; -97.952 ; Led_period[21]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.333     ;
+; -97.937 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.322     ;
+; -97.920 ; Led_period[26]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.301     ;
+; -97.907 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.292     ;
+; -97.903 ; Led_period[10]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.288     ;
+; -97.890 ; Led_period[26]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.271     ;
+; -97.878 ; Led_period[22]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.259     ;
+; -97.876 ; Led_period[15]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.256     ;
+; -97.867 ; Led_period[28]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.247     ;
+; -97.854 ; Led_period[18]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.240     ;
+; -97.848 ; Led_period[22]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.229     ;
+; -97.846 ; Led_period[15]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.226     ;
+; -97.846 ; Led_period[24]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.226     ;
+; -97.841 ; Led_period[20]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.225     ;
+; -97.840 ; Led_period[25]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.221     ;
+; -97.837 ; Led_period[28]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.217     ;
+; -97.836 ; Led_period[21]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.217     ;
+; -97.811 ; Led_period[20]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.195     ;
+; -97.810 ; Led_period[23]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.191     ;
+; -97.810 ; Led_period[25]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.191     ;
+; -97.806 ; Led_period[21]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.187     ;
+; -97.804 ; Led_period[11]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.189     ;
+; -97.791 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[27] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.176     ;
+; -97.789 ; Led_period[12]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.174     ;
+; -97.774 ; Led_period[26]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.155     ;
+; -97.761 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[28] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.146     ;
+; -97.757 ; Led_period[10]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.142     ;
+; -97.744 ; Led_period[26]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.125     ;
+; -97.732 ; Led_period[22]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.113     ;
+; -97.730 ; Led_period[15]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.110     ;
+; -97.729 ; Led_period[19]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.115     ;
+; -97.727 ; Led_period[10]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.112     ;
+; -97.721 ; Led_period[28]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.101     ;
+; -97.717 ; Led_period[17]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.103     ;
+; -97.708 ; Led_period[18]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.094     ;
+; -97.702 ; Led_period[22]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.083     ;
+; -97.700 ; Led_period[15]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.080     ;
+; -97.700 ; Led_period[24]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.080     ;
+; -97.695 ; Led_period[20]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.079     ;
+; -97.694 ; Led_period[25]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.075     ;
+; -97.691 ; Led_period[28]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.071     ;
+; -97.690 ; Led_period[21]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.071     ;
+; -97.678 ; Led_period[18]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.385      ; 99.064     ;
+; -97.676 ; Led_period[14]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.060     ;
+; -97.670 ; Led_period[24]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.379      ; 99.050     ;
+; -97.665 ; Led_period[20]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.383      ; 99.049     ;
+; -97.664 ; Led_period[23]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.045     ;
+; -97.664 ; Led_period[25]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.045     ;
+; -97.660 ; Led_period[21]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.041     ;
+; -97.658 ; Led_period[11]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.043     ;
+; -97.645 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[25] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.030     ;
+; -97.643 ; Led_period[12]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.028     ;
+; -97.634 ; Led_period[23]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.015     ;
+; -97.628 ; Led_period[11]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.013     ;
+; -97.628 ; Led_period[26]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.380      ; 99.009     ;
+; -97.615 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[26] ; clk          ; clk         ; 1.000        ; 0.384      ; 99.000     ;
+; -97.613 ; Led_period[12]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.384      ; 98.998     ;
+; -97.611 ; Led_period[10]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.384      ; 98.996     ;
+; -97.600 ; Led_period[29]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.980     ;
+; -97.598 ; Led_period[26]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.380      ; 98.979     ;
+; -97.587 ; Led_period[22]                            ; duty[21] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.967     ;
+; -97.586 ; Led_period[27]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.966     ;
+; -97.584 ; Led_period[15]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.964     ;
+; -97.583 ; Led_period[19]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.385      ; 98.969     ;
+; -97.581 ; Led_period[10]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.384      ; 98.966     ;
+; -97.576 ; Led_period[28]                            ; duty[21] ; clk          ; clk         ; 1.000        ; 0.378      ; 98.955     ;
+; -97.571 ; Led_period[17]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.385      ; 98.957     ;
+; -97.562 ; Led_period[18]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.385      ; 98.948     ;
+; -97.557 ; Led_period[22]                            ; duty[22] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.937     ;
+; -97.554 ; Led_period[15]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.934     ;
+; -97.554 ; Led_period[24]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.934     ;
+; -97.553 ; Led_period[19]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.385      ; 98.939     ;
+; -97.549 ; Led_period[20]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.383      ; 98.933     ;
+; -97.548 ; Led_period[25]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.380      ; 98.929     ;
+; -97.546 ; Led_period[28]                            ; duty[22] ; clk          ; clk         ; 1.000        ; 0.378      ; 98.925     ;
+; -97.544 ; Led_period[21]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.380      ; 98.925     ;
+; -97.541 ; Led_period[17]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.385      ; 98.927     ;
+; -97.532 ; Led_period[18]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.385      ; 98.918     ;
+; -97.530 ; Led_period[14]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.383      ; 98.914     ;
+; -97.524 ; Led_period[24]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.379      ; 98.904     ;
+; -97.519 ; Led_period[20]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.383      ; 98.903     ;
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
 
 
@@ -291,28 +291,29 @@ No paths to report.
 ; 0.454 ; count_m10:count10_m0|data[3]          ; count_m10:count10_m0|data[3]          ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m0|data[2]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; count_m10:count10_m0|data[1]          ; count_m10:count10_m0|data[1]          ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
-; 0.454 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[3]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
+; 0.454 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.454 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.746      ;
 ; 0.466 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[0]          ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
 ; 0.466 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[0]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.758      ;
-; 0.518 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.810      ;
-; 0.519 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 0.811      ;
-; 0.551 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.843      ;
-; 0.552 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.844      ;
-; 0.555 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.847      ;
 ; 0.559 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.080      ; 0.851      ;
 ; 0.559 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[1]          ; clk          ; clk         ; 0.000        ; 0.080      ; 0.851      ;
-; 0.571 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.863      ;
-; 0.572 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.864      ;
+; 0.691 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.983      ;
+; 0.691 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.983      ;
+; 0.694 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.080      ; 0.986      ;
 ; 0.706 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[6]   ; clk          ; clk         ; 0.000        ; 0.081      ; 0.999      ;
+; 0.708 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.000      ;
 ; 0.710 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[0]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.003      ;
+; 0.712 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.004      ;
 ; 0.712 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[4]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.005      ;
 ; 0.713 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[5]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.006      ;
 ; 0.713 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[3]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.006      ;
 ; 0.714 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[7]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.007      ;
 ; 0.714 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[2]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.007      ;
 ; 0.717 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[1]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.010      ;
+; 0.736 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.028      ;
+; 0.736 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.028      ;
+; 0.752 ; cnt[31]                               ; cnt[31]                               ; clk          ; clk         ; 0.000        ; 0.081      ; 1.045      ;
 ; 0.760 ; seg_scan:seg_scan_m0|scan_timer[3]    ; seg_scan:seg_scan_m0|scan_timer[3]    ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
 ; 0.760 ; seg_scan:seg_scan_m0|scan_timer[15]   ; seg_scan:seg_scan_m0|scan_timer[15]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.053      ;
 ; 0.761 ; seg_scan:seg_scan_m0|scan_timer[1]    ; seg_scan:seg_scan_m0|scan_timer[1]    ; clk          ; clk         ; 0.000        ; 0.081      ; 1.054      ;
@@ -367,6 +368,7 @@ No paths to report.
 ; 0.766 ; ax_pwm:ax_pwm_m0|period_cnt[30]       ; ax_pwm:ax_pwm_m0|period_cnt[30]       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.059      ;
 ; 0.766 ; ax_pwm:ax_pwm_m0|period_cnt[28]       ; ax_pwm:ax_pwm_m0|period_cnt[28]       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.059      ;
 ; 0.766 ; ax_pwm:ax_pwm_m0|period_cnt[26]       ; ax_pwm:ax_pwm_m0|period_cnt[26]       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.059      ;
+; 0.775 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.067      ;
 ; 0.776 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.068      ;
 ; 0.782 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|DFF2       ; clk          ; clk         ; 0.000        ; 0.081      ; 1.075      ;
 ; 0.783 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[6]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.075      ;
@@ -376,16 +378,14 @@ No paths to report.
 ; 0.787 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[10]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.079      ;
 ; 0.787 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[9]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.079      ;
 ; 0.788 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[12]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.080      ;
-; 0.796 ; cnt[31]                               ; cnt[31]                               ; clk          ; clk         ; 0.000        ; 0.081      ; 1.089      ;
+; 0.792 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.084      ;
+; 0.795 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.087      ;
+; 0.796 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.088      ;
+; 0.799 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.091      ;
 ; 0.800 ; count_m10:count10_m0|data[3]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.080      ; 1.092      ;
 ; 0.802 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[4]        ; clk          ; clk         ; 0.000        ; 0.080      ; 1.094      ;
-; 0.810 ; count_m10:count10_m0|data[1]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.080      ; 1.102      ;
-; 0.823 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.080      ; 1.115      ;
-; 0.828 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[6]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.121      ;
-; 0.829 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[3]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.122      ;
-; 0.831 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[2]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.124      ;
-; 0.833 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[4]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.126      ;
-; 0.833 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[5]   ; clk          ; clk         ; 0.000        ; 0.081      ; 1.126      ;
+; 0.809 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.101      ;
+; 0.809 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.080      ; 1.101      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -400,7 +400,7 @@ No synchronizer chains to report.
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 11.03 MHz ; 11.03 MHz       ; clk        ;      ;
+; 11.09 MHz ; 11.09 MHz       ; clk        ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -410,7 +410,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+---------+------------------+
 ; Clock ; Slack   ; End Point TNS    ;
 +-------+---------+------------------+
-; clk   ; -89.629 ; -3727.348        ;
+; clk   ; -89.140 ; -3700.180        ;
 +-------+---------+------------------+
 
 
@@ -449,106 +449,106 @@ No paths to report.
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node                                 ; To Node  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
-; -89.629 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.994     ;
-; -89.515 ; Led_period[20]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.880     ;
-; -89.503 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.868     ;
-; -89.467 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.832     ;
-; -89.389 ; Led_period[20]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.754     ;
-; -89.377 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.742     ;
-; -89.353 ; Led_period[20]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.718     ;
-; -89.347 ; Led_period[21]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.711     ;
-; -89.341 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.706     ;
-; -89.308 ; Led_period[28]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.671     ;
-; -89.263 ; Led_period[20]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.628     ;
-; -89.251 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[25] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.616     ;
-; -89.229 ; Led_period[10]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.594     ;
-; -89.227 ; Led_period[20]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.592     ;
-; -89.221 ; Led_period[21]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.585     ;
-; -89.215 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[26] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.580     ;
-; -89.202 ; Led_period[15]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.565     ;
-; -89.185 ; Led_period[21]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.549     ;
-; -89.182 ; Led_period[28]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.545     ;
-; -89.146 ; Led_period[28]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.509     ;
-; -89.137 ; Led_period[20]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.502     ;
-; -89.125 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[23] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.490     ;
-; -89.103 ; Led_period[10]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.468     ;
-; -89.101 ; Led_period[20]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.466     ;
-; -89.095 ; Led_period[21]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.459     ;
-; -89.094 ; Led_period[11]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.459     ;
-; -89.089 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[24] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.454     ;
-; -89.076 ; Led_period[15]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.439     ;
-; -89.067 ; Led_period[10]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.432     ;
-; -89.059 ; Led_period[21]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.423     ;
-; -89.056 ; Led_period[28]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.419     ;
-; -89.040 ; Led_period[15]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.403     ;
-; -89.024 ; Led_period[24]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.387     ;
-; -89.020 ; Led_period[28]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.383     ;
-; -89.020 ; Led_period[19]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.386     ;
-; -89.011 ; Led_period[20]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.376     ;
-; -89.000 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[21] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.364     ;
-; -89.000 ; Led_period[22]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.364     ;
-; -88.981 ; Led_period[29]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.344     ;
-; -88.977 ; Led_period[10]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.342     ;
-; -88.975 ; Led_period[20]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.340     ;
-; -88.969 ; Led_period[21]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.333     ;
-; -88.968 ; Led_period[11]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.333     ;
-; -88.964 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[22] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.328     ;
-; -88.960 ; Led_period[26]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.324     ;
-; -88.957 ; Led_period[25]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.321     ;
-; -88.950 ; Led_period[15]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.313     ;
-; -88.941 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[13] ; clk          ; clk         ; 1.000        ; -0.083     ; 89.860     ;
-; -88.941 ; Led_period[10]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.306     ;
-; -88.933 ; Led_period[21]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.297     ;
-; -88.932 ; Led_period[11]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.297     ;
-; -88.930 ; Led_period[28]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.293     ;
-; -88.920 ; Led_period[9]                             ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.284     ;
-; -88.914 ; Led_period[15]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.277     ;
-; -88.905 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[14] ; clk          ; clk         ; 1.000        ; -0.083     ; 89.824     ;
-; -88.898 ; Led_period[24]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.261     ;
-; -88.894 ; Led_period[28]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.257     ;
-; -88.894 ; Led_period[19]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.260     ;
-; -88.886 ; Led_period[20]                            ; duty[21] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.250     ;
-; -88.874 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[19] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.238     ;
-; -88.874 ; Led_period[22]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.238     ;
-; -88.862 ; Led_period[24]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.225     ;
-; -88.858 ; Led_period[19]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.224     ;
-; -88.855 ; Led_period[29]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.218     ;
-; -88.851 ; Led_period[10]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.216     ;
-; -88.850 ; Led_period[20]                            ; duty[22] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.214     ;
-; -88.843 ; Led_period[21]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.207     ;
-; -88.842 ; Led_period[11]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.207     ;
-; -88.838 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[20] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.202     ;
-; -88.838 ; Led_period[22]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.202     ;
-; -88.834 ; Led_period[26]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.198     ;
-; -88.831 ; Led_period[25]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.195     ;
-; -88.827 ; Led_period[20]                            ; duty[13] ; clk          ; clk         ; 1.000        ; -0.083     ; 89.746     ;
-; -88.824 ; Led_period[15]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.187     ;
-; -88.819 ; Led_period[29]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.182     ;
-; -88.815 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[11] ; clk          ; clk         ; 1.000        ; -0.083     ; 89.734     ;
-; -88.815 ; Led_period[10]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.180     ;
-; -88.807 ; Led_period[21]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.171     ;
-; -88.806 ; Led_period[11]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.171     ;
-; -88.804 ; Led_period[28]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.167     ;
-; -88.798 ; Led_period[26]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.162     ;
-; -88.797 ; Led_period[18]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.163     ;
-; -88.795 ; Led_period[25]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.159     ;
-; -88.794 ; Led_period[9]                             ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.158     ;
-; -88.791 ; Led_period[20]                            ; duty[14] ; clk          ; clk         ; 1.000        ; -0.083     ; 89.710     ;
-; -88.788 ; Led_period[15]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.151     ;
-; -88.780 ; Led_period[27]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.143     ;
-; -88.779 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[12] ; clk          ; clk         ; 1.000        ; -0.083     ; 89.698     ;
-; -88.779 ; Led_period[16]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.145     ;
-; -88.772 ; Led_period[24]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.135     ;
-; -88.768 ; Led_period[28]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.131     ;
-; -88.768 ; Led_period[19]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.134     ;
-; -88.760 ; Led_period[20]                            ; duty[19] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.124     ;
-; -88.758 ; Led_period[9]                             ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.122     ;
-; -88.748 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[17] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.112     ;
-; -88.748 ; Led_period[22]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.112     ;
-; -88.736 ; Led_period[24]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.099     ;
-; -88.732 ; Led_period[19]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.098     ;
-; -88.729 ; Led_period[29]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.092     ;
-; -88.725 ; Led_period[10]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.090     ;
+; -89.140 ; Led_period[28]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.503     ;
+; -89.063 ; Led_period[22]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.427     ;
+; -89.014 ; Led_period[28]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.377     ;
+; -88.978 ; Led_period[28]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.341     ;
+; -88.940 ; Led_period[20]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.305     ;
+; -88.938 ; Led_period[21]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.302     ;
+; -88.937 ; Led_period[22]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.301     ;
+; -88.901 ; Led_period[22]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.265     ;
+; -88.901 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.266     ;
+; -88.888 ; Led_period[28]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.251     ;
+; -88.852 ; Led_period[28]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.215     ;
+; -88.830 ; Led_period[25]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.194     ;
+; -88.827 ; Led_period[26]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.191     ;
+; -88.814 ; Led_period[20]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.179     ;
+; -88.812 ; Led_period[21]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.176     ;
+; -88.811 ; Led_period[22]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.175     ;
+; -88.804 ; Led_period[15]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.167     ;
+; -88.778 ; Led_period[20]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.143     ;
+; -88.776 ; Led_period[21]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.140     ;
+; -88.775 ; Led_period[22]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.139     ;
+; -88.775 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.140     ;
+; -88.762 ; Led_period[28]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.125     ;
+; -88.739 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.104     ;
+; -88.726 ; Led_period[28]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.089     ;
+; -88.716 ; Led_period[10]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.081     ;
+; -88.704 ; Led_period[25]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.068     ;
+; -88.701 ; Led_period[26]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.065     ;
+; -88.688 ; Led_period[20]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.053     ;
+; -88.686 ; Led_period[21]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.050     ;
+; -88.685 ; Led_period[22]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.049     ;
+; -88.678 ; Led_period[15]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.041     ;
+; -88.668 ; Led_period[25]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.032     ;
+; -88.665 ; Led_period[26]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.029     ;
+; -88.652 ; Led_period[20]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.017     ;
+; -88.650 ; Led_period[21]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.014     ;
+; -88.649 ; Led_period[22]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.362      ; 90.013     ;
+; -88.649 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.014     ;
+; -88.642 ; Led_period[15]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 90.005     ;
+; -88.642 ; Led_period[11]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 90.007     ;
+; -88.637 ; Led_period[18]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.364      ; 90.003     ;
+; -88.636 ; Led_period[28]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.999     ;
+; -88.615 ; Led_period[12]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.980     ;
+; -88.613 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.978     ;
+; -88.600 ; Led_period[28]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.963     ;
+; -88.590 ; Led_period[10]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.955     ;
+; -88.589 ; Led_period[24]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.952     ;
+; -88.578 ; Led_period[25]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.942     ;
+; -88.575 ; Led_period[19]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.941     ;
+; -88.575 ; Led_period[26]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.939     ;
+; -88.562 ; Led_period[20]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.927     ;
+; -88.561 ; Led_period[23]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.925     ;
+; -88.560 ; Led_period[21]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.924     ;
+; -88.559 ; Led_period[22]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.923     ;
+; -88.554 ; Led_period[10]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.919     ;
+; -88.552 ; Led_period[15]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.915     ;
+; -88.550 ; Led_period[17]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.916     ;
+; -88.542 ; Led_period[25]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.906     ;
+; -88.539 ; Led_period[26]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.903     ;
+; -88.526 ; Led_period[20]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.891     ;
+; -88.524 ; Led_period[21]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.888     ;
+; -88.523 ; Led_period[22]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.887     ;
+; -88.523 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[25] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.888     ;
+; -88.516 ; Led_period[15]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.879     ;
+; -88.516 ; Led_period[11]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.881     ;
+; -88.511 ; Led_period[28]                            ; duty[21] ; clk          ; clk         ; 1.000        ; 0.360      ; 89.873     ;
+; -88.511 ; Led_period[18]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.877     ;
+; -88.489 ; Led_period[12]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.854     ;
+; -88.487 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[26] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.852     ;
+; -88.480 ; Led_period[11]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.845     ;
+; -88.475 ; Led_period[28]                            ; duty[22] ; clk          ; clk         ; 1.000        ; 0.360      ; 89.837     ;
+; -88.475 ; Led_period[18]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.841     ;
+; -88.464 ; Led_period[10]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.829     ;
+; -88.463 ; Led_period[24]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.826     ;
+; -88.463 ; Led_period[14]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.828     ;
+; -88.453 ; Led_period[12]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.818     ;
+; -88.452 ; Led_period[28]                            ; duty[13] ; clk          ; clk         ; 1.000        ; -0.085     ; 89.369     ;
+; -88.452 ; Led_period[25]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.816     ;
+; -88.449 ; Led_period[19]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.815     ;
+; -88.449 ; Led_period[26]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.813     ;
+; -88.447 ; Led_period[29]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.810     ;
+; -88.436 ; Led_period[20]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.801     ;
+; -88.435 ; Led_period[23]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.799     ;
+; -88.434 ; Led_period[22]                            ; duty[21] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.797     ;
+; -88.434 ; Led_period[21]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.798     ;
+; -88.428 ; Led_period[10]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.793     ;
+; -88.427 ; Led_period[24]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.790     ;
+; -88.426 ; Led_period[15]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.789     ;
+; -88.424 ; Led_period[17]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.790     ;
+; -88.416 ; Led_period[28]                            ; duty[14] ; clk          ; clk         ; 1.000        ; -0.085     ; 89.333     ;
+; -88.416 ; Led_period[25]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.780     ;
+; -88.413 ; Led_period[19]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.364      ; 89.779     ;
+; -88.413 ; Led_period[26]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.777     ;
+; -88.405 ; Led_period[27]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.768     ;
+; -88.400 ; Led_period[20]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.765     ;
+; -88.399 ; Led_period[23]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.763     ;
+; -88.398 ; Led_period[22]                            ; duty[22] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.761     ;
+; -88.398 ; Led_period[21]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.362      ; 89.762     ;
+; -88.397 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[23] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.762     ;
+; -88.390 ; Led_period[15]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.361      ; 89.753     ;
+; -88.390 ; Led_period[11]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.363      ; 89.755     ;
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
 
 
@@ -560,23 +560,23 @@ No paths to report.
 ; 0.401 ; count_m10:count10_m0|data[3]          ; count_m10:count10_m0|data[3]          ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; count_m10:count10_m0|data[2]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
 ; 0.401 ; count_m10:count10_m0|data[1]          ; count_m10:count10_m0|data[1]          ; clk          ; clk         ; 0.000        ; 0.073      ; 0.669      ;
-; 0.402 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[3]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
+; 0.402 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; ax_debounce:ax_debounce_m0|button_out ; ax_debounce:ax_debounce_m0|button_out ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.402 ; Led_period[25]                        ; Led_period[25]                        ; clk          ; clk         ; 0.000        ; 0.072      ; 0.669      ;
 ; 0.416 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[0]          ; clk          ; clk         ; 0.000        ; 0.073      ; 0.684      ;
 ; 0.417 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[0]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.684      ;
-; 0.477 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.744      ;
-; 0.479 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.746      ;
-; 0.504 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.771      ;
-; 0.505 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.772      ;
-; 0.508 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.775      ;
 ; 0.512 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[1]          ; clk          ; clk         ; 0.000        ; 0.073      ; 0.780      ;
 ; 0.513 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.073      ; 0.781      ;
-; 0.529 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.796      ;
-; 0.530 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.797      ;
+; 0.641 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.908      ;
+; 0.641 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.908      ;
+; 0.645 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.912      ;
+; 0.656 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.923      ;
+; 0.657 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.924      ;
+; 0.662 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.929      ;
 ; 0.662 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[6]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.929      ;
+; 0.664 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.931      ;
 ; 0.666 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[0]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.933      ;
 ; 0.668 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[3]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.935      ;
 ; 0.669 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[4]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.936      ;
@@ -584,6 +584,7 @@ No paths to report.
 ; 0.670 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[2]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.937      ;
 ; 0.671 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[7]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.938      ;
 ; 0.673 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[1]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.940      ;
+; 0.704 ; cnt[31]                               ; cnt[31]                               ; clk          ; clk         ; 0.000        ; 0.072      ; 0.971      ;
 ; 0.705 ; seg_scan:seg_scan_m0|scan_timer[3]    ; seg_scan:seg_scan_m0|scan_timer[3]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
 ; 0.705 ; seg_scan:seg_scan_m0|scan_timer[5]    ; seg_scan:seg_scan_m0|scan_timer[5]    ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
 ; 0.705 ; seg_scan:seg_scan_m0|scan_timer[13]   ; seg_scan:seg_scan_m0|scan_timer[13]   ; clk          ; clk         ; 0.000        ; 0.072      ; 0.972      ;
@@ -638,25 +639,24 @@ No paths to report.
 ; 0.713 ; ax_pwm:ax_pwm_m0|period_cnt[30]       ; ax_pwm:ax_pwm_m0|period_cnt[30]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.980      ;
 ; 0.713 ; ax_pwm:ax_pwm_m0|period_cnt[28]       ; ax_pwm:ax_pwm_m0|period_cnt[28]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.980      ;
 ; 0.713 ; ax_pwm:ax_pwm_m0|period_cnt[26]       ; ax_pwm:ax_pwm_m0|period_cnt[26]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.980      ;
+; 0.718 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.985      ;
+; 0.719 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.986      ;
+; 0.719 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.986      ;
 ; 0.720 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.072      ; 0.987      ;
 ; 0.730 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|DFF2       ; clk          ; clk         ; 0.000        ; 0.072      ; 0.997      ;
 ; 0.733 ; seg_scan:seg_scan_m0|scan_timer[0]    ; seg_scan:seg_scan_m0|scan_timer[0]    ; clk          ; clk         ; 0.000        ; 0.072      ; 1.000      ;
 ; 0.735 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[6]        ; clk          ; clk         ; 0.000        ; 0.072      ; 1.002      ;
-; 0.737 ; cnt[31]                               ; cnt[31]                               ; clk          ; clk         ; 0.000        ; 0.072      ; 1.004      ;
 ; 0.737 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[8]        ; clk          ; clk         ; 0.000        ; 0.072      ; 1.004      ;
 ; 0.738 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[5]        ; clk          ; clk         ; 0.000        ; 0.072      ; 1.005      ;
 ; 0.739 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[10]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.006      ;
 ; 0.740 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[12]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.007      ;
 ; 0.740 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[9]        ; clk          ; clk         ; 0.000        ; 0.072      ; 1.007      ;
+; 0.745 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.012      ;
+; 0.748 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.015      ;
+; 0.749 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.016      ;
+; 0.749 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.072      ; 1.016      ;
 ; 0.754 ; count_m10:count10_m0|data[3]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.073      ; 1.022      ;
 ; 0.756 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[4]        ; clk          ; clk         ; 0.000        ; 0.072      ; 1.023      ;
-; 0.758 ; count_m10:count10_m0|data[1]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.073      ; 1.026      ;
-; 0.764 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.072      ; 1.031      ;
-; 0.776 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[6]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.043      ;
-; 0.777 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[3]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.044      ;
-; 0.780 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[2]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.047      ;
-; 0.780 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[4]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.047      ;
-; 0.781 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[5]   ; clk          ; clk         ; 0.000        ; 0.072      ; 1.048      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -671,7 +671,7 @@ No synchronizer chains to report.
 +-------+---------+------------------+
 ; Clock ; Slack   ; End Point TNS    ;
 +-------+---------+------------------+
-; clk   ; -42.268 ; -1646.253        ;
+; clk   ; -42.137 ; -1633.224        ;
 +-------+---------+------------------+
 
 
@@ -710,106 +710,106 @@ No paths to report.
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
 ; Slack   ; From Node                                 ; To Node  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
-; -42.268 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.408     ;
-; -42.204 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.344     ;
-; -42.200 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.340     ;
-; -42.143 ; Led_period[20]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.281     ;
-; -42.136 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.276     ;
-; -42.132 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.272     ;
-; -42.102 ; Led_period[10]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.242     ;
-; -42.084 ; Led_period[28]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.220     ;
-; -42.079 ; Led_period[20]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.217     ;
-; -42.075 ; Led_period[15]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.211     ;
-; -42.075 ; Led_period[20]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.213     ;
-; -42.068 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[26] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.208     ;
-; -42.065 ; Led_period[21]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.202     ;
-; -42.064 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[25] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.204     ;
-; -42.038 ; Led_period[10]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.178     ;
-; -42.034 ; Led_period[10]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.174     ;
-; -42.034 ; Led_period[11]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.174     ;
-; -42.027 ; Led_period[9]                             ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.164     ;
-; -42.020 ; Led_period[28]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.156     ;
-; -42.019 ; Led_period[29]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.155     ;
-; -42.016 ; Led_period[28]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.152     ;
-; -42.015 ; Led_period[24]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.151     ;
-; -42.011 ; Led_period[15]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.147     ;
-; -42.011 ; Led_period[20]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.149     ;
-; -42.007 ; Led_period[15]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.143     ;
-; -42.007 ; Led_period[20]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.145     ;
-; -42.001 ; Led_period[21]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.138     ;
-; -42.000 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[24] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.140     ;
-; -41.997 ; Led_period[21]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.134     ;
-; -41.996 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[23] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.136     ;
-; -41.992 ; Led_period[22]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.129     ;
-; -41.980 ; Led_period[19]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.121     ;
-; -41.970 ; Led_period[10]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.110     ;
-; -41.970 ; Led_period[11]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.110     ;
-; -41.966 ; Led_period[10]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.106     ;
-; -41.966 ; Led_period[11]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.106     ;
-; -41.963 ; Led_period[9]                             ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.100     ;
-; -41.959 ; Led_period[9]                             ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.096     ;
-; -41.955 ; Led_period[29]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.091     ;
-; -41.954 ; Led_period[26]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.091     ;
-; -41.952 ; Led_period[28]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.088     ;
-; -41.951 ; Led_period[24]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.087     ;
-; -41.951 ; Led_period[29]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.087     ;
-; -41.948 ; Led_period[28]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.084     ;
-; -41.947 ; Led_period[24]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.083     ;
-; -41.944 ; Led_period[25]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.081     ;
-; -41.943 ; Led_period[15]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.079     ;
-; -41.943 ; Led_period[20]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.081     ;
-; -41.940 ; Led_period[27]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.076     ;
-; -41.939 ; Led_period[15]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.075     ;
-; -41.939 ; Led_period[20]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.077     ;
-; -41.933 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[22] ; clk          ; clk         ; 1.000        ; 0.152      ; 43.072     ;
-; -41.933 ; Led_period[21]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.070     ;
-; -41.929 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[21] ; clk          ; clk         ; 1.000        ; 0.152      ; 43.068     ;
-; -41.929 ; Led_period[21]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.066     ;
-; -41.928 ; Led_period[22]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.065     ;
-; -41.924 ; Led_period[22]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.061     ;
-; -41.916 ; Led_period[19]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.057     ;
-; -41.912 ; Led_period[19]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.053     ;
-; -41.911 ; Led_period[16]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.052     ;
-; -41.902 ; Led_period[10]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.042     ;
-; -41.902 ; Led_period[11]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.042     ;
-; -41.898 ; Led_period[10]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.038     ;
-; -41.898 ; Led_period[11]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.038     ;
-; -41.895 ; Led_period[9]                             ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.032     ;
-; -41.891 ; Led_period[9]                             ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.028     ;
-; -41.890 ; Led_period[26]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.027     ;
-; -41.887 ; Led_period[29]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.023     ;
-; -41.886 ; Led_period[26]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.023     ;
-; -41.884 ; Led_period[28]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.020     ;
-; -41.883 ; Led_period[24]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.019     ;
-; -41.883 ; Led_period[29]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.019     ;
-; -41.880 ; Led_period[28]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.016     ;
-; -41.880 ; Led_period[25]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.017     ;
-; -41.879 ; Led_period[24]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.015     ;
-; -41.876 ; Led_period[25]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.013     ;
-; -41.876 ; Led_period[27]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.012     ;
-; -41.875 ; Led_period[15]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.011     ;
-; -41.875 ; Led_period[20]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.013     ;
-; -41.872 ; Led_period[27]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.008     ;
-; -41.872 ; Led_period[23]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.009     ;
-; -41.871 ; Led_period[15]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.007     ;
-; -41.871 ; Led_period[20]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.009     ;
-; -41.867 ; Led_period[18]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.008     ;
-; -41.865 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[20] ; clk          ; clk         ; 1.000        ; 0.152      ; 43.004     ;
-; -41.865 ; Led_period[21]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.002     ;
-; -41.864 ; Led_period[17]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.005     ;
-; -41.861 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[19] ; clk          ; clk         ; 1.000        ; 0.152      ; 43.000     ;
-; -41.861 ; Led_period[21]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.998     ;
-; -41.860 ; Led_period[22]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.997     ;
-; -41.856 ; Led_period[22]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.993     ;
-; -41.853 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[14] ; clk          ; clk         ; 1.000        ; -0.040     ; 42.800     ;
-; -41.849 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[13] ; clk          ; clk         ; 1.000        ; -0.040     ; 42.796     ;
-; -41.848 ; Led_period[19]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.989     ;
-; -41.847 ; Led_period[16]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.988     ;
-; -41.844 ; Led_period[19]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.985     ;
-; -41.843 ; Led_period[8]                             ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.980     ;
-; -41.843 ; Led_period[16]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.984     ;
-; -41.834 ; Led_period[10]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.974     ;
-; -41.834 ; Led_period[11]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.974     ;
+; -42.137 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.277     ;
+; -42.125 ; Led_period[28]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.261     ;
+; -42.104 ; Led_period[22]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.241     ;
+; -42.073 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.213     ;
+; -42.069 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.209     ;
+; -42.061 ; Led_period[28]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.197     ;
+; -42.057 ; Led_period[28]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.193     ;
+; -42.040 ; Led_period[22]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.177     ;
+; -42.036 ; Led_period[22]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.173     ;
+; -42.015 ; Led_period[25]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.152     ;
+; -42.005 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.145     ;
+; -42.004 ; Led_period[26]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.141     ;
+; -42.001 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.141     ;
+; -41.995 ; Led_period[21]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.132     ;
+; -41.993 ; Led_period[28]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.129     ;
+; -41.992 ; Led_period[20]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.130     ;
+; -41.989 ; Led_period[28]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.125     ;
+; -41.982 ; Led_period[10]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.122     ;
+; -41.972 ; Led_period[22]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.109     ;
+; -41.971 ; Led_period[15]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.107     ;
+; -41.968 ; Led_period[22]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.105     ;
+; -41.954 ; Led_period[12]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.094     ;
+; -41.951 ; Led_period[25]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.088     ;
+; -41.947 ; Led_period[25]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.084     ;
+; -41.946 ; Led_period[11]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.086     ;
+; -41.940 ; Led_period[26]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.077     ;
+; -41.939 ; Led_period[24]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.075     ;
+; -41.937 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[26] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.077     ;
+; -41.936 ; Led_period[26]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.073     ;
+; -41.933 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[25] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.073     ;
+; -41.931 ; Led_period[21]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.068     ;
+; -41.928 ; Led_period[20]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.066     ;
+; -41.927 ; Led_period[21]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.064     ;
+; -41.925 ; Led_period[28]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.061     ;
+; -41.924 ; Led_period[20]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.151      ; 43.062     ;
+; -41.921 ; Led_period[23]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.058     ;
+; -41.921 ; Led_period[28]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.057     ;
+; -41.918 ; Led_period[10]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.058     ;
+; -41.917 ; Led_period[17]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.058     ;
+; -41.915 ; Led_period[27]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.051     ;
+; -41.914 ; Led_period[10]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.054     ;
+; -41.907 ; Led_period[15]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.043     ;
+; -41.905 ; Led_period[19]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.046     ;
+; -41.904 ; Led_period[22]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.041     ;
+; -41.903 ; Led_period[15]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.039     ;
+; -41.900 ; Led_period[22]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.037     ;
+; -41.899 ; Led_period[18]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.154      ; 43.040     ;
+; -41.890 ; Led_period[12]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.030     ;
+; -41.886 ; Led_period[12]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.026     ;
+; -41.883 ; Led_period[25]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.020     ;
+; -41.882 ; Led_period[11]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.022     ;
+; -41.879 ; Led_period[25]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.016     ;
+; -41.878 ; Led_period[11]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.018     ;
+; -41.875 ; Led_period[24]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.011     ;
+; -41.874 ; Led_period[29]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.010     ;
+; -41.872 ; Led_period[26]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.009     ;
+; -41.871 ; Led_period[24]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 43.007     ;
+; -41.869 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[24] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.009     ;
+; -41.868 ; Led_period[26]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.005     ;
+; -41.865 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[23] ; clk          ; clk         ; 1.000        ; 0.153      ; 43.005     ;
+; -41.863 ; Led_period[21]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.150      ; 43.000     ;
+; -41.860 ; Led_period[20]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.151      ; 42.998     ;
+; -41.859 ; Led_period[21]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.996     ;
+; -41.857 ; Led_period[23]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.994     ;
+; -41.857 ; Led_period[28]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.993     ;
+; -41.856 ; Led_period[20]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.151      ; 42.994     ;
+; -41.853 ; Led_period[17]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.994     ;
+; -41.853 ; Led_period[23]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.990     ;
+; -41.853 ; Led_period[28]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.989     ;
+; -41.851 ; Led_period[27]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.987     ;
+; -41.850 ; Led_period[10]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.990     ;
+; -41.849 ; Led_period[17]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.990     ;
+; -41.847 ; Led_period[27]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.983     ;
+; -41.846 ; Led_period[10]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.986     ;
+; -41.841 ; Led_period[19]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.982     ;
+; -41.839 ; Led_period[15]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.975     ;
+; -41.837 ; Led_period[19]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.978     ;
+; -41.836 ; Led_period[22]                            ; duty[24] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.973     ;
+; -41.835 ; Led_period[15]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.971     ;
+; -41.835 ; Led_period[18]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.976     ;
+; -41.832 ; Led_period[22]                            ; duty[23] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.969     ;
+; -41.831 ; Led_period[18]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.154      ; 42.972     ;
+; -41.828 ; Led_period[14]                            ; duty[31] ; clk          ; clk         ; 1.000        ; 0.151      ; 42.966     ;
+; -41.822 ; Led_period[12]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.962     ;
+; -41.818 ; Led_period[12]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.958     ;
+; -41.815 ; Led_period[25]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.952     ;
+; -41.814 ; Led_period[11]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.954     ;
+; -41.811 ; Led_period[25]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.948     ;
+; -41.810 ; Led_period[11]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.153      ; 42.950     ;
+; -41.810 ; Led_period[29]                            ; duty[30] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.946     ;
+; -41.807 ; Led_period[24]                            ; duty[28] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.943     ;
+; -41.806 ; Led_period[29]                            ; duty[29] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.942     ;
+; -41.804 ; Led_period[26]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.941     ;
+; -41.803 ; Led_period[24]                            ; duty[27] ; clk          ; clk         ; 1.000        ; 0.149      ; 42.939     ;
+; -41.802 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[22] ; clk          ; clk         ; 1.000        ; 0.152      ; 42.941     ;
+; -41.800 ; Led_period[26]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.937     ;
+; -41.798 ; ax_debounce:ax_debounce_m0|button_negedge ; duty[21] ; clk          ; clk         ; 1.000        ; 0.152      ; 42.937     ;
+; -41.795 ; Led_period[21]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.932     ;
+; -41.792 ; Led_period[20]                            ; duty[26] ; clk          ; clk         ; 1.000        ; 0.151      ; 42.930     ;
+; -41.791 ; Led_period[21]                            ; duty[25] ; clk          ; clk         ; 1.000        ; 0.150      ; 42.928     ;
 +---------+-------------------------------------------+----------+--------------+-------------+--------------+------------+------------+
 
 
@@ -821,23 +821,24 @@ No paths to report.
 ; 0.187 ; count_m10:count10_m0|data[3]          ; count_m10:count10_m0|data[3]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m0|data[2]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; count_m10:count10_m0|data[1]          ; count_m10:count10_m0|data[1]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
-; 0.187 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[3]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
+; 0.187 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; ax_debounce:ax_debounce_m0|button_out ; ax_debounce:ax_debounce_m0|button_out ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.187 ; Led_period[25]                        ; Led_period[25]                        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.307      ;
 ; 0.194 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[0]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
 ; 0.194 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[0]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.314      ;
-; 0.209 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.329      ;
-; 0.214 ; seg_scan:seg_scan_m0|scan_sel[2]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.334      ;
-; 0.227 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.347      ;
 ; 0.227 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[1]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.347      ;
-; 0.228 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.348      ;
-; 0.228 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.348      ;
-; 0.229 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.349      ;
 ; 0.229 ; count_m10:count10_m0|data[0]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.349      ;
-; 0.231 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.351      ;
+; 0.284 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.404      ;
+; 0.285 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.405      ;
+; 0.285 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.405      ;
+; 0.285 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.405      ;
+; 0.287 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.407      ;
+; 0.287 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.407      ;
+; 0.288 ; seg_scan:seg_scan_m0|scan_sel[0]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.408      ;
 ; 0.294 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[6]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.414      ;
+; 0.298 ; cnt[31]                               ; cnt[31]                               ; clk          ; clk         ; 0.000        ; 0.036      ; 0.418      ;
 ; 0.300 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[0]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.420      ;
 ; 0.300 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[3]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.420      ;
 ; 0.302 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[2]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.422      ;
@@ -883,6 +884,7 @@ No paths to report.
 ; 0.306 ; ax_pwm:ax_pwm_m0|period_cnt[18]       ; ax_pwm:ax_pwm_m0|period_cnt[18]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
 ; 0.306 ; ax_pwm:ax_pwm_m0|period_cnt[16]       ; ax_pwm:ax_pwm_m0|period_cnt[16]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
 ; 0.306 ; ax_pwm:ax_pwm_m0|period_cnt[11]       ; ax_pwm:ax_pwm_m0|period_cnt[11]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.426      ;
+; 0.307 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[2]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
 ; 0.307 ; seg_scan:seg_scan_m0|scan_timer[4]    ; seg_scan:seg_scan_m0|scan_timer[4]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
 ; 0.307 ; seg_scan:seg_scan_m0|scan_timer[10]   ; seg_scan:seg_scan_m0|scan_timer[10]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
 ; 0.307 ; seg_scan:seg_scan_m0|scan_timer[12]   ; seg_scan:seg_scan_m0|scan_timer[12]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
@@ -895,15 +897,20 @@ No paths to report.
 ; 0.307 ; ax_pwm:ax_pwm_m0|period_cnt[22]       ; ax_pwm:ax_pwm_m0|period_cnt[22]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
 ; 0.307 ; ax_pwm:ax_pwm_m0|period_cnt[20]       ; ax_pwm:ax_pwm_m0|period_cnt[20]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
 ; 0.307 ; ax_pwm:ax_pwm_m0|period_cnt[14]       ; ax_pwm:ax_pwm_m0|period_cnt[14]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
+; 0.307 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[3]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.427      ;
 ; 0.308 ; seg_scan:seg_scan_m0|scan_timer[28]   ; seg_scan:seg_scan_m0|scan_timer[28]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.428      ;
 ; 0.308 ; seg_scan:seg_scan_m0|scan_timer[26]   ; seg_scan:seg_scan_m0|scan_timer[26]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.428      ;
 ; 0.308 ; ax_pwm:ax_pwm_m0|period_cnt[30]       ; ax_pwm:ax_pwm_m0|period_cnt[30]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.428      ;
 ; 0.308 ; ax_pwm:ax_pwm_m0|period_cnt[28]       ; ax_pwm:ax_pwm_m0|period_cnt[28]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.428      ;
+; 0.310 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[1]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.430      ;
+; 0.310 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.430      ;
 ; 0.311 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|DFF2       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.431      ;
 ; 0.313 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[1]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.433      ;
+; 0.314 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[4]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.434      ;
+; 0.315 ; seg_scan:seg_scan_m0|scan_sel[1]      ; seg_scan:seg_scan_m0|seg_sel[0]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.435      ;
 ; 0.316 ; seg_scan:seg_scan_m0|scan_timer[0]    ; seg_scan:seg_scan_m0|scan_timer[0]    ; clk          ; clk         ; 0.000        ; 0.036      ; 0.436      ;
-; 0.320 ; cnt[31]                               ; cnt[31]                               ; clk          ; clk         ; 0.000        ; 0.036      ; 0.440      ;
 ; 0.322 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[6]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.442      ;
+; 0.322 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.442      ;
 ; 0.322 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[5]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.442      ;
 ; 0.324 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[8]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.444      ;
 ; 0.326 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[10]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.446      ;
@@ -911,13 +918,6 @@ No paths to report.
 ; 0.326 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[4]        ; clk          ; clk         ; 0.000        ; 0.036      ; 0.446      ;
 ; 0.327 ; ax_pwm:ax_pwm_m0|period_r[10]         ; ax_pwm:ax_pwm_m0|period_cnt[12]       ; clk          ; clk         ; 0.000        ; 0.036      ; 0.447      ;
 ; 0.333 ; count_m10:count10_m0|data[3]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.453      ;
-; 0.334 ; seg_scan:seg_scan_m0|scan_sel[3]      ; seg_scan:seg_scan_m0|scan_sel[2]      ; clk          ; clk         ; 0.000        ; 0.036      ; 0.454      ;
-; 0.335 ; count_m10:count10_m0|data[1]          ; count_m10:count10_m0|data[2]          ; clk          ; clk         ; 0.000        ; 0.036      ; 0.455      ;
-; 0.343 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[6]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.463      ;
-; 0.344 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[3]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.464      ;
-; 0.348 ; duty[31]                              ; duty[31]                              ; clk          ; clk         ; 0.000        ; 0.044      ; 0.476      ;
-; 0.348 ; ax_debounce:ax_debounce_m0|DFF2       ; ax_debounce:ax_debounce_m0|q_reg[2]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.468      ;
-; 0.348 ; ax_debounce:ax_debounce_m0|DFF1       ; ax_debounce:ax_debounce_m0|q_reg[4]   ; clk          ; clk         ; 0.000        ; 0.036      ; 0.468      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -932,10 +932,10 @@ No synchronizer chains to report.
 +------------------+-----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -98.712   ; 0.187 ; N/A      ; N/A     ; -3.000              ;
-;  clk             ; -98.712   ; 0.187 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -4090.682 ; 0.0   ; 0.0      ; 0.0     ; -358.393            ;
-;  clk             ; -4090.682 ; 0.000 ; N/A      ; N/A     ; -358.393            ;
+; Worst-case Slack ; -98.316   ; 0.187 ; N/A      ; N/A     ; -3.000              ;
+;  clk             ; -98.316   ; 0.187 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -4067.154 ; 0.0   ; 0.0      ; 0.0     ; -358.393            ;
+;  clk             ; -4067.154 ; 0.000 ; N/A      ; N/A     ; -358.393            ;
 +------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -1185,7 +1185,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Fri Nov 10 10:31:36 2023
+    Info: Processing started: Fri Nov 10 17:33:59 2023
 Info: Command: quartus_sta key_debounce -c key_debounce
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1202,10 +1202,10 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -98.712
+Info (332146): Worst-case setup slack is -98.316
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -98.712           -4090.682 clk 
+    Info (332119):   -98.316           -4067.154 clk 
 Info (332146): Worst-case hold slack is 0.453
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1222,10 +1222,10 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -89.629
+Info (332146): Worst-case setup slack is -89.140
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -89.629           -3727.348 clk 
+    Info (332119):   -89.140           -3700.180 clk 
 Info (332146): Worst-case hold slack is 0.401
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1240,10 +1240,10 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -42.268
+Info (332146): Worst-case setup slack is -42.137
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -42.268           -1646.253 clk 
+    Info (332119):   -42.137           -1633.224 clk 
 Info (332146): Worst-case hold slack is 0.187
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -1257,8 +1257,8 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Fri Nov 10 10:31:39 2023
+    Info: Peak virtual memory: 4783 megabytes
+    Info: Processing ended: Fri Nov 10 17:34:02 2023
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
