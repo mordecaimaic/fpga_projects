@@ -1,5 +1,5 @@
 Flow report for key_debounce
-Wed Nov 08 19:10:20 2023
+Fri Nov 10 10:31:39 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 08 19:10:16 2023       ;
+; Flow Status                        ; Successful - Fri Nov 10 10:31:30 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; key_debounce                                ;
 ; Top-level Entity Name              ; key_debounce                                ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2023 19:09:41 ;
+; Start date & time ; 11/10/2023 10:30:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; key_debounce        ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 268490108405490.169944178111204        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 268490108405490.169958344818880        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS      ; Half Signal Swing                      ; --            ; --          ; --         ;
@@ -96,11 +96,11 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4773 MB             ; 00:00:28                           ;
-; Fitter                    ; 00:00:14     ; 1.1                     ; 5497 MB             ; 00:00:15                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.3                     ; 4795 MB             ; 00:00:03                           ;
-; Total                     ; 00:00:33     ; --                      ; --                  ; 00:00:47                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 4770 MB             ; 00:00:28                           ;
+; Fitter                    ; 00:00:15     ; 1.1                     ; 5495 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4668 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.3                     ; 4796 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:34     ; --                      ; --                  ; 00:00:47                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

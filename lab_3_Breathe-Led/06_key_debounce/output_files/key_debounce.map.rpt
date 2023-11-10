@@ -1,5 +1,5 @@
 Analysis & Synthesis report for key_debounce
-Wed Nov 08 19:09:57 2023
+Fri Nov 10 10:31:03 2023
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 08 19:09:56 2023       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 10 10:31:03 2023       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; key_debounce                                ;
 ; Top-level Entity Name              ; key_debounce                                ;
@@ -172,33 +172,33 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; src/ax_pwm.v                     ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/ax_pwm.v               ;         ;
-; src/seg_scan.v                   ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/seg_scan.v             ;         ;
-; src/seg_decoder.v                ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/seg_decoder.v          ;         ;
-; src/key_debounce.v               ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v         ;         ;
-; src/count_m10.v                  ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/count_m10.v            ;         ;
-; src/ax_debounce.v                ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/ax_debounce.v          ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_divide.tdf                              ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/abs_divider.inc                             ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sign_div_unsign.inc                         ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                              ;         ;
-; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/lpm_divide_ikm.tdf      ;         ;
-; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/sign_div_unsign_bnh.tdf ;         ;
-; db/alt_u_div_aaf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/alt_u_div_aaf.tdf       ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/add_sub_7pc.tdf         ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/add_sub_8pc.tdf         ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
+; src/ax_pwm.v                     ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/ax_pwm.v               ;         ;
+; src/seg_scan.v                   ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/seg_scan.v             ;         ;
+; src/seg_decoder.v                ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/seg_decoder.v          ;         ;
+; src/key_debounce.v               ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v         ;         ;
+; src/count_m10.v                  ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/count_m10.v            ;         ;
+; src/ax_debounce.v                ; yes             ; User Verilog HDL File        ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/ax_debounce.v          ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_divide.tdf                                          ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/abs_divider.inc                                         ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/sign_div_unsign.inc                                     ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                 ; d:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                                          ;         ;
+; db/lpm_divide_ikm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/lpm_divide_ikm.tdf      ;         ;
+; db/sign_div_unsign_bnh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/sign_div_unsign_bnh.tdf ;         ;
+; db/alt_u_div_aaf.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/alt_u_div_aaf.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/add_sub_8pc.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -497,57 +497,57 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Nov 08 19:09:41 2023
+    Info: Processing started: Fri Nov 10 10:30:47 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off key_debounce -c key_debounce
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file src/ax_pwm.v
-    Info (12023): Found entity 1: ax_pwm File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/ax_pwm.v Line: 34
+    Info (12023): Found entity 1: ax_pwm File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/ax_pwm.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file src/seg_scan.v
-    Info (12023): Found entity 1: seg_scan File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/seg_scan.v Line: 29
+    Info (12023): Found entity 1: seg_scan File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/seg_scan.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file src/seg_decoder.v
-    Info (12023): Found entity 1: seg_decoder File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/seg_decoder.v Line: 29
+    Info (12023): Found entity 1: seg_decoder File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/seg_decoder.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file src/key_debounce.v
-    Info (12023): Found entity 1: key_debounce File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 29
+    Info (12023): Found entity 1: key_debounce File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file src/count_m10.v
-    Info (12023): Found entity 1: count_m10 File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/count_m10.v Line: 30
+    Info (12023): Found entity 1: count_m10 File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/count_m10.v Line: 30
 Info (12021): Found 1 design units, including 1 entities, in source file src/ax_debounce.v
-    Info (12023): Found entity 1: ax_debounce File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/ax_debounce.v Line: 31
+    Info (12023): Found entity 1: ax_debounce File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/ax_debounce.v Line: 31
 Info (12127): Elaborating entity "key_debounce" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at key_debounce.v(147): truncated value with size 33 to match size of target (32) File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 147
-Info (12128): Elaborating entity "ax_debounce" for hierarchy "ax_debounce:ax_debounce_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 60
-Info (12128): Elaborating entity "count_m10" for hierarchy "count_m10:count10_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 71
-Info (12128): Elaborating entity "seg_decoder" for hierarchy "seg_decoder:seg_decoder_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 87
-Info (12128): Elaborating entity "seg_scan" for hierarchy "seg_scan:seg_scan_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 106
-Info (12128): Elaborating entity "ax_pwm" for hierarchy "ax_pwm:ax_pwm_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 122
+Warning (10230): Verilog HDL assignment warning at key_debounce.v(147): truncated value with size 33 to match size of target (32) File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 147
+Info (12128): Elaborating entity "ax_debounce" for hierarchy "ax_debounce:ax_debounce_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 60
+Info (12128): Elaborating entity "count_m10" for hierarchy "count_m10:count10_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 71
+Info (12128): Elaborating entity "seg_decoder" for hierarchy "seg_decoder:seg_decoder_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 87
+Info (12128): Elaborating entity "seg_scan" for hierarchy "seg_scan:seg_scan_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 106
+Info (12128): Elaborating entity "ax_pwm" for hierarchy "ax_pwm:ax_pwm_m0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 122
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 146
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 146
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 146
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 146
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 146
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 146
     Info (12134): Parameter "LPM_WIDTHN" = "32"
     Info (12134): Parameter "LPM_WIDTHD" = "33"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ikm.tdf
-    Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/lpm_divide_ikm.tdf Line: 24
+    Info (12023): Found entity 1: lpm_divide_ikm File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/lpm_divide_ikm.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/sign_div_unsign_bnh.tdf Line: 24
+    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/sign_div_unsign_bnh.tdf Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_aaf.tdf
-    Info (12023): Found entity 1: alt_u_div_aaf File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/alt_u_div_aaf.tdf Line: 26
+    Info (12023): Found entity 1: alt_u_div_aaf File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/alt_u_div_aaf.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/add_sub_7pc.tdf Line: 22
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/add_sub_7pc.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/add_sub_8pc.tdf Line: 22
-Info (13000): Registers with preset signals will power-up high File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/seg_scan.v Line: 77
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/add_sub_8pc.tdf Line: 22
+Info (13000): Registers with preset signals will power-up high File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/seg_scan.v Line: 77
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "seg_data[7]" is stuck at VCC File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/src/key_debounce.v Line: 34
+    Warning (13410): Pin "seg_data[7]" is stuck at VCC File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/src/key_debounce.v Line: 34
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_10_result_int[8]~6" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/alt_u_div_aaf.tdf Line: 36
-    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_11_result_int[8]~8" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/alt_u_div_aaf.tdf Line: 41
-    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_12_result_int[8]~10" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/db/alt_u_div_aaf.tdf Line: 46
-Info (144001): Generated suppressed messages file C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/output_files/key_debounce.map.smsg
+    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_10_result_int[8]~6" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/alt_u_div_aaf.tdf Line: 36
+    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_11_result_int[8]~8" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/alt_u_div_aaf.tdf Line: 41
+    Info (17048): Logic cell "lpm_divide:Div0|lpm_divide_ikm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider|add_sub_12_result_int[8]~10" File: C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/db/alt_u_div_aaf.tdf Line: 46
+Info (144001): Generated suppressed messages file C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/output_files/key_debounce.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 1208 device resources after synthesis - the final resource count might be different
@@ -555,8 +555,8 @@ Info (21057): Implemented 1208 device resources after synthesis - the final reso
     Info (21059): Implemented 18 output pins
     Info (21061): Implemented 1187 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4773 megabytes
-    Info: Processing ended: Wed Nov 08 19:09:57 2023
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Fri Nov 10 10:31:03 2023
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:28
 
@@ -564,6 +564,6 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/professor/Documents/GitHub/fpga_projects/lab_3/06_key_debounce/output_files/key_debounce.map.smsg.
+The suppressed messages can be found in C:/Users/professor/Documents/GitHub/fpga_projects/lab_3_Breathe-Led/06_key_debounce/output_files/key_debounce.map.smsg.
 
 
